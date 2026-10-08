@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6366f1">
+  <title>QuizPro — منصّة الاختبارات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236366f1'/%3E%3Ctext x='50' y='72' font-size='60' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3E%3F%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#/">
+        <span class="brand-mark">؟</span>
+        <span class="brand-text">
+          <span class="brand-name">QuizPro</span>
+          <span class="brand-tag">منصّة الاختبارات الذكية</span>
+        </span>
+      </a>
+      <div class="topbar-actions">
+        <a class="btn btn-ghost btn-sm" href="#/auth" id="authLink">👤</a>
+        <button id="themeBtn" class="btn btn-ghost btn-sm btn-icon" type="button" aria-label="theme">◐</button>
+        <a class="btn btn-ghost btn-sm" href="#/admin" id="adminLink">⚙</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="app" id="app">
+    <div class="page-loading"><div class="spinner"></div></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-dot"></span>
+      <span>تجربة أسهل وأجمل من النماذج التقليدية</span>
+    </div>
+  </footer>
+
+  <div class="toasts" id="toasts"></div>
+  <div class="modal-backdrop" id="modalRoot" hidden></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/api.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="js/student.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
